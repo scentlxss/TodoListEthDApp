@@ -18,12 +18,14 @@
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
-    "@openzeppelin/solidity-loader": "^1.5.1",
-    "@truffle/solidity-loader": "^0.1.43",
     "babel-loader": "^8.2.2",
     "babel-preset-env": "^1.7.0",
+    "express": "^4.17.1",
     "jquery": "^3.6.0",
     "json-loader": "^0.5.7",
-    "oz": "^5.0.3"
+    "nodemon": "^2.0.12",
+    "truffle-contract": "^4.0.31",
+    "web3": "^1.5.2",
+    "webpack": "^3.12.0"
   }
 }

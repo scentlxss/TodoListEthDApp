@@ -1,12 +1,14 @@
 FROM ubuntu:latest
 
 USER root
+COPY ./ /app/
 WORKDIR /app
-RUN apt-get update
-RUN apt-get install nodejs npm git
-RUN git clone https://github.com/scentlxss/TodoListEthDApp.git .
-RUN npm install
-RUN ./node_modules/.bin/webpack
 EXPOSE 3000/tcp
+RUN apt-get update -y 
+RUN apt-get install -y nodejs npm git
+RUN npm install -g truffle
+RUN npm install -g webpack@3.2.0
+RUN truffle migrate --reset
+RUN webpack
 
-CMD ["npm","run","dev-back"]
+CMD ./run.sh
