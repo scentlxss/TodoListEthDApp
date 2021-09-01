@@ -1,0 +1,29 @@
+{
+  "name": "truffle_project_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev-front": "webpack --watch",
+    "dev-back": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@openzeppelin/solidity-loader": "^1.5.1",
+    "@truffle/solidity-loader": "^0.1.43",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "jquery": "^3.6.0",
+    "json-loader": "^0.5.7",
+    "oz": "^5.0.3"
+  }
+}

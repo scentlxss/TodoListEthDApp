@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1" >
+
+		<title> Backend running ToDo List Contract </title>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+
+
+	<div id="page-header" class="row">
+		<div class="col-sm-12">
+			<h1 class="text-center">
+			Backend running ToDo List Contract
+			</h1>
+		</div>
+	</div>
+	    <div class="container">
+		<div class="card">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2 class="orange">Create Task</h2>
+				</div>
+			</div>
+			<div class="row">
+				<form id="new-task" class="col-sm-12">
+					<div class="form-group">
+						<label for="task-content">Content</label>
+						<input id="task-content" type="text" class="form-control"></input>
+					</div>
+					<div class="form-group">
+						<label for="task-author">Author</label>
+						<input id="task-author" type="text" class="form-control"></input>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+
+					<div id="task-status"></div>
+				</form>
+			</div>
+		</div>	
+	    </div>
+
+
+
+		<div class="container">
+		    
+		      <div class="card">
+			<div class="row">
+			  <div class="col-sm-12">
+			    <h2 class="orange">Tasks</h2>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-sm-12">
+			    <table class="table">
+			      <thead>
+				<tr>
+				  <th>ID</th>
+				  <th>Date</th>
+				  <th>Content</th>
+				  <th>Author</th>
+				  <th>Done</th>
+				  <th>Date Complete</th>
+				</tr>
+			      </thead>
+			      <tbody id="tasks">
+			
+			      </tbody>
+			    </table>
+			  </div>
+			</div>
+		      </div>
+		</div>
+
+		<footer>
+			<p class="text-center">....<a href=# title=#>ToDo</a>...</p>
+		</footer>
+
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="vendor/web3.min.js"></script>
+		<script src="vendor/truffle-contract.min.js"></script>-->
+		<script src="dist/bundle.js"></script>
+
+	</body>
+</html>
